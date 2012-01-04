@@ -4,7 +4,7 @@ DEVICE=c8500
 MANUFACTURER=huawei
 
 mkdir -p 	../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp prebuild/*  	../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp prebuilt/*  	../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 
 ##==================================================================================
 
