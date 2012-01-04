@@ -12,20 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# This file sets variables that control the way modules are built
-# thorughout the system. It should not be used to conditionally
-# disable makefiles (the proper mechanism to control what gets
-# included in a build is to use PRODUCT_PACKAGES in a product
-# definition file).
-#
-
-# WARNING: This line must come *before* including the proprietary
-# variant, so that it gets overwritten by the parent (which goes
-# against the traditional rules of inheritance).
-
-# inherit from the proprietary version
-#-include vendor/huawei/c8500/BoardConfigVendor.mk
 
 # ARMv6-compatible processor rev 2 (v6l)
 # CPU
@@ -42,7 +28,7 @@ TARGET_OTA_ASSERT_DEVICE := c8500,C8500
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := true 
 TARGET_NO_RADIOIMAGE := true
-TARGET_NO_RECOVERY := true
+TARGET_NO_RECOVERY := false
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -76,9 +62,9 @@ BOARD_NO_RGBX_8888 := true
 BOARD_AVOID_DRAW_TEXTURE_EXTENSION := true
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 TARGET_USES_16BPPSURFACE_FOR_OPAQUE := true
-TARGET_SF_NEEDS_REAL_DIMENSIONS := true
-BUILD_WITH_FULL_STAGEFRIGHT := true
-TARGET_ELECTRONBEAM_FRAMES := 10
+#TARGET_SF_NEEDS_REAL_DIMENSIONS := true
+#BUILD_WITH_FULL_STAGEFRIGHT := true
+#TARGET_ELECTRONBEAM_FRAMES := 10
 
 # Misc
 WITH_DEXPREOPT := true
@@ -91,14 +77,14 @@ BOARD_USE_USB_MASS_STORAGE_SWITCH := true
 BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
 
 # Sensors
-#TARGET_USES_OLD_LIBSENSORS_HAL := true
+TARGET_USES_OLD_LIBSENSORS_HAL := true
 BOARD_VENDOR_USE_AKMD := akm8973
 
 # Lights
 TARGET_PROVIDES_LIBLIGHTS := true
 
 # Audio
-#BOARD_USES_GENERIC_AUDIO := false
+#BOARD_USES_GENERIC_AUDIO := true
 TARGET_PROVIDES_LIBAUDIO := true
 
 # RIL
@@ -117,7 +103,6 @@ WPA_SUPPLICANT_VERSION := VER_0_6_X
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_CMDLINE := mem=211M  no_console_suspend=1 console=null  androidboot.hardware=c8500
 BOARD_KERNEL_PAGESIZE := 4096
-
 
 
 
