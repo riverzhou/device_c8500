@@ -14,15 +14,15 @@ cp prebuilt/*  	../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/gps.conf:		system/etc/gps.conf \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vold.fstab:		system/etc/vold.fstab \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/gps.conf:system/etc/gps.conf \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vold.fstab:system/etc/vold.fstab \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/fw_bcm4319_apsta.bin:system/etc/firmware/fw_bcm4319_apsta.bin \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/fw_bcm4319.bin:	system/etc/firmware/fw_bcm4319.bin \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/nvram.txt:		system/etc/firmware/nvram.txt \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/bcm4319.ko:		system/lib/modules/bcm4319.ko \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/sensors.default.so:	system/lib/hw/sensors.default.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libbcm_fm_power.so:	system/lib/libbcm_fm_power.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libbcmfm_if.so:	system/lib/libbcmfm_if.so 
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/fw_bcm4319.bin:system/etc/firmware/fw_bcm4319.bin \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/nvram.txt:system/etc/firmware/nvram.txt \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/bcm4319.ko:system/lib/modules/bcm4319.ko \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/sensors.default.so:system/lib/hw/sensors.default.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libbcm_fm_power.so:system/lib/libbcm_fm_power.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libbcmfm_if.so:system/lib/libbcmfm_if.so 
 
 EOF
 
@@ -58,5 +58,6 @@ EOF
 USE_CAMERA_STUB := false
 
 EOF
+
 
 
