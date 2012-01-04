@@ -25,7 +25,7 @@
 # against the traditional rules of inheritance).
 
 # inherit from the proprietary version
--include vendor/huawei/c8500/BoardConfigVendor.mk
+#-include vendor/huawei/c8500/BoardConfigVendor.mk
 
 # ARMv6-compatible processor rev 2 (v6l)
 # CPU
@@ -64,6 +64,10 @@ BOARD_GPS_NEEDS_XTRA := true
 # FM
 BOARD_HAVE_FM_RADIO := true
 BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
+
+# CAMERA
+USE_CAMERA_STUB := false
+BUILD_LIBCAMERA := true
 
 # Display
 TARGET_HARDWARE_3D := false

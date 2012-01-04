@@ -18,4 +18,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/huawei_c8500.mk
+    $(LOCAL_DIR)/huawei.mk
