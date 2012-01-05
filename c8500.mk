@@ -13,6 +13,11 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/libbcmfm_if.so:system/lib/libbcmfm_if.so
 
 
+PRODUCT_PACKAGES += \
+    Gallery \
+    ddmlib
+
+
 DEVICE_PACKAGE_OVERLAYS := \
     device/huawei/c8500/overlay
 

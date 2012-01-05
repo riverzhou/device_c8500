@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/cyanogen/products/common_full_no_themes.mk)
+#$(call inherit-product, vendor/cyanogen/products/common_full_no_themes.mk)
+$(call inherit-product, vendor/cyanogen/products/common_full.mk)
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 $(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 $(call inherit-product, vendor/cyanogen/products/common_versions.mk)
