@@ -59,24 +59,11 @@ media.stagefright.enable-http=true
 
 #Addition
 keyguard.no_require_sim=true
-ro.com.google.clientidbase=android-huawei-us
 ro.cdma.home.operator.numeric=46003
 ro.cdma.home.operator.alpha=中国电信
 ro.config.cdma_subscription=0
-ril.subscription.types=RUIM
 ro.cdma.voicemail.number=mine
+ril.subscription.types=RUIM
 ro.setupwizard.enable_bypass=1
-keyguard.no_require_sim=ro.rommanager.developerid=cyanogenmod
-ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
-ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
-ro.com.google.clientidbase=android-google
-ro.com.android.wifi-watchlist=GoogleGuest
-ro.setupwizard.enterprise_mode=1
-ro.com.android.dateformat=MM-dd-yyyy
-ro.com.android.dataroaming=false
-ro.config.ringtone=Playa.ogg
-ro.config.notification_sound=regulus.ogg
-ro.config.alarm_alert=Alarm_Beep_03.ogg
-ro.setupwizard.mode=OPTIONAL
 
 

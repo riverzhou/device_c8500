@@ -84,6 +84,7 @@ TARGET_USES_16BPPSURFACE_FOR_OPAQUE := true
 
 # Misc
 WITH_DEXPREOPT := true
+#WITH_DEXPREOPT := false
 
 # Browser
 JS_ENGINE := v8

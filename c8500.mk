@@ -14,9 +14,17 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/libcamera.so:system/lib/libcamera.so \
     device/huawei/c8500/prebuilt/libcamera.so:obj/lib/libcamera.so  \
     device/huawei/c8500/prebuilt/libqcamera.so:system/lib/libqcamera.so \
+    device/huawei/c8500/prebuilt/libmmipl.so:obj/lib/libmmipl.so  \
     device/huawei/c8500/prebuilt/libaudioeq.so:system/lib/libaudioeq.so \
     device/huawei/c8500/prebuilt/AudioFilter.csv:system/etc/AudioFilter.csv \
-    device/huawei/c8500/prebuilt/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt
+    device/huawei/c8500/prebuilt/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
+    device/huawei/c8500/prebuilt/libreference-ril.so:system/lib/libreference-ril.so \
+    device/huawei/c8500/prebuilt/libril-qc-1.so:system/lib/libril-qc-1.so \
+    device/huawei/c8500/prebuilt/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+    device/huawei/c8500/prebuilt/libril.so:system/lib/libril.so \
+    device/huawei/c8500/prebuilt/rild:system/bin/rild 
+
+    device/huawei/c8500/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
 
 
 PRODUCT_COPY_FILES += \
@@ -44,16 +52,19 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/base/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
-    frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/
+    frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/ \
+    vendor/cyanogen/prebuilt/ldpi/media/bootanimation.zip:system/media/bootanimation.zip
 
 
 PRODUCT_PACKAGES := \
+    librs_jni \
     libRS \
-    hwprops \
+    Gallery  \
     gps.msm7k \
     copybit.msm7k \
     gralloc.msm7k \
-    lights.msm7k
+    lights.msm7k 
+
 
 DEVICE_PACKAGE_OVERLAYS := \
     device/huawei/c8500/overlay

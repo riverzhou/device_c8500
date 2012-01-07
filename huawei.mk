@@ -14,13 +14,15 @@
 # limitations under the License.
 #
 
-#$(call inherit-product, vendor/cyanogen/products/common_full_no_themes.mk)
-$(call inherit-product, vendor/cyanogen/products/common_full.mk)
+
+$(call inherit-product, build/target/product/generic.mk)
+$(call inherit-product, vendor/cyanogen/products/common_full_no_themes.mk)
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 #$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
-$(call inherit-product, vendor/cyanogen/products/common_versions.mk)
-$(call inherit-product-if-exists, vendor/huawei/c8500/c8500-vendor.mk)
+$(call inherit-product-if-exists, device/huawei/c8500/languages.mk)
 $(call inherit-product-if-exists, device/huawei/c8500/c8500.mk)
+
+-include vendor/cyanogen/products/common_versions.mk
 
 PRODUCT_NAME :=huawei_c8500
 PRODUCT_DEVICE :=c8500
