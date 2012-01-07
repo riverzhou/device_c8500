@@ -14,6 +14,7 @@ persist.sys.purgeable_assets=1
 persist.sys.use_16bpp_alpha=1
 windowsmgr.max_events_per_sec=260
 debug.sf.hw=1
+debug.performance.tuning=1
 
 # Power
 #pm.sleep_mode=1
