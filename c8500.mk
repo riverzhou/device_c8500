@@ -14,7 +14,7 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/libcamera.so:system/lib/libcamera.so \
     device/huawei/c8500/prebuilt/libcamera.so:obj/lib/libcamera.so  \
     device/huawei/c8500/prebuilt/libqcamera.so:system/lib/libqcamera.so \
-    device/huawei/c8500/prebuilt/libmmipl.so:obj/lib/libmmipl.so  \
+    device/huawei/c8500/prebuilt/libmmipl.so:system/lib/libmmipl.so  \
     device/huawei/c8500/prebuilt/libaudioeq.so:system/lib/libaudioeq.so \
     device/huawei/c8500/prebuilt/AudioFilter.csv:system/etc/AudioFilter.csv \
     device/huawei/c8500/prebuilt/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
