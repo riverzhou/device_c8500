@@ -16,8 +16,8 @@ windowsmgr.max_events_per_sec=260
 debug.sf.hw=1
 
 # Power
-pm.sleep_mode=1
-ro.ril.disable.power.collapse=0
+#pm.sleep_mode=1
+#ro.ril.disable.power.collapse=0
 
 # WiFi
 wifi.interface=eth0
