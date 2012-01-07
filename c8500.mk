@@ -1,4 +1,12 @@
 
+PRODUCT_PACKAGES := \
+    librs_jni \
+    libRS \
+    Gallery \
+    copybit.c8500 \
+    gps.msm7k \
+    gralloc.msm7k \
+    lights.msm7k 
 
 
 PRODUCT_COPY_FILES := \
@@ -84,17 +92,5 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/ldpi/media/bootanimation.zip:system/media/bootanimation.zip
 
 
-PRODUCT_PACKAGES := \
-    librs_jni \
-    libRS \
-    Gallery \
-    copybit.c8500 \
-    gps.msm7k \
-    gralloc.msm7k \
-    lights.msm7k 
-
-
-DEVICE_PACKAGE_OVERLAYS := \
-    device/huawei/c8500/overlay
 
 
