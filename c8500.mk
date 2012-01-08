@@ -42,6 +42,7 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/pvplayer.cfg:system/etc/pvplayer.cfg \
     device/huawei/c8500/prebuilt/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     device/huawei/c8500/prebuilt/egl.cfg:system/lib/egl/egl.cfg \
+    device/huawei/c8500/prebuilt/libhwrpc.so:system/lib/libhwrpc.so \
     device/huawei/c8500/prebuilt/libaudioeq.so:system/lib/libaudioeq.so \
     device/huawei/c8500/prebuilt/libcamera.so:system/lib/libcamera.so \
     device/huawei/c8500/prebuilt/libcamera.so:obj/lib/libcamera.so  \
