@@ -6,10 +6,11 @@ PRODUCT_PACKAGES := \
     librs_jni \
     libRS \
     Gallery \
-    copybit.c8500 \
     gps.msm7k \
-    gralloc.msm7k \
-    lights.msm7k 
+    copybit.c8500 \
+    gralloc.c8500 \
+    lights.c8500 \
+    sensors.c8500
 
 
 PRODUCT_COPY_FILES := \
@@ -19,11 +20,15 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/fw_bcm4319.bin:system/etc/firmware/fw_bcm4319.bin \
     device/huawei/c8500/prebuilt/nvram.txt:system/etc/firmware/nvram.txt \
     device/huawei/c8500/prebuilt/bcm4319.ko:system/lib/modules/bcm4319.ko \
-    device/huawei/c8500/prebuilt/sensors.default.so:system/lib/hw/sensors.default.so \
+    device/huawei/c8500/prebuilt/sensors.default.so:system/lib/hw/sensors.c8500.so \
+    device/huawei/c8500/prebuilt/copybit.msm7k.so:system/lib/hw/copybit.c8500.so \
+    device/huawei/c8500/prebuilt/copybit.msm7k.so:obj/lib/copybit.c8500.so  \
+    device/huawei/c8500/prebuilt/gralloc.msm7k.so:system/lib/hw/gralloc.c8500.so \
+    device/huawei/c8500/prebuilt/lights.msm7k.so:system/lib/hw/lights.c8500.so \
     device/huawei/c8500/prebuilt/libbcm_fm_power.so:system/lib/libbcm_fm_power.so \
     device/huawei/c8500/prebuilt/libbcmfm_if.so:system/lib/libbcmfm_if.so \
-    device/huawei/c8500/prebuilt/libcamera.so:obj/lib/libcamera.so  \
-    device/huawei/c8500/prebuilt/libril.so:obj/lib/libril.so  \
+    device/huawei/c8500/prebuilt/libfm_hal.so:system/lib/libfm_hal.so \
+    device/huawei/c8500/prebuilt/libfm_volume.so:system/lib/libfm_volume.so \
     device/huawei/c8500/prebuilt/AudioFilter.csv:system/etc/AudioFilter.csv \
     device/huawei/c8500/prebuilt/AudioFilterC8500.csv:system/etc/AudioFilterC8500.csv \
     device/huawei/c8500/prebuilt/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
@@ -39,7 +44,9 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/egl.cfg:system/lib/egl/egl.cfg \
     device/huawei/c8500/prebuilt/libaudioeq.so:system/lib/libaudioeq.so \
     device/huawei/c8500/prebuilt/libcamera.so:system/lib/libcamera.so \
+    device/huawei/c8500/prebuilt/libcamera.so:obj/lib/libcamera.so  \
     device/huawei/c8500/prebuilt/libril.so:system/lib/libril.so \
+    device/huawei/c8500/prebuilt/libril.so:obj/lib/libril.so  \
     device/huawei/c8500/prebuilt/libcm.so:system/lib/libcm.so \
     device/huawei/c8500/prebuilt/libdiag.so:system/lib/libdiag.so \
     device/huawei/c8500/prebuilt/libdll.so:system/lib/libdll.so \
