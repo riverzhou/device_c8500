@@ -31,7 +31,6 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/01_qc.cfg:system/etc/01_qc.cfg \
     device/huawei/c8500/prebuilt/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
     device/huawei/c8500/prebuilt/pvplayer.cfg:system/etc/pvplayer.cfg \
-    device/huawei/c8500/prebuilt/apns-conf.xml:system/etc/apns-conf.xml \
     device/huawei/c8500/prebuilt/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     device/huawei/c8500/prebuilt/egl.cfg:system/lib/egl/egl.cfg \
     device/huawei/c8500/prebuilt/libaudioeq.so:system/lib/libaudioeq.so \
@@ -89,8 +88,8 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/base/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/ \
-    vendor/cyanogen/prebuilt/ldpi/media/bootanimation.zip:system/media/bootanimation.zip
-
+    vendor/cyanogen/prebuilt/ldpi/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 
 
