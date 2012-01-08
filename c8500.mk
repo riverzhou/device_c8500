@@ -6,7 +6,7 @@ PRODUCT_PACKAGES := \
     librs_jni \
     libRS \
     Gallery \
-    gps.msm7k \
+    gps.c8500 \
     copybit.c8500 \
     gralloc.c8500 \
     lights.c8500 \
