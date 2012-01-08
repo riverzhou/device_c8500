@@ -13,8 +13,8 @@ persist.sys.use_dithering=0
 persist.sys.purgeable_assets=1
 persist.sys.use_16bpp_alpha=1
 windowsmgr.max_events_per_sec=260
-debug.sf.hw=1
-debug.performance.tuning=1
+#debug.sf.hw=1
+#debug.performance.tuning=1
 
 # Power
 #pm.sleep_mode=1
@@ -35,7 +35,7 @@ ro.ril.def.agps.mode=2
 ro.config.xtra_support=true
 
 # FM
-ro.config.fm_type=libbcmfm_if
+#ro.config.fm_type=libbcmfm_if
 
 # VM
 dalvik.vm.execution-mode=int:fast

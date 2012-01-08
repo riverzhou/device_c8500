@@ -1,4 +1,7 @@
 
+DEVICE_PACKAGE_OVERLAYS := device/huawei/c8500/overlay
+
+
 PRODUCT_PACKAGES := \
     librs_jni \
     libRS \
@@ -22,6 +25,7 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/libcamera.so:obj/lib/libcamera.so  \
     device/huawei/c8500/prebuilt/libril.so:obj/lib/libril.so  \
     device/huawei/c8500/prebuilt/AudioFilter.csv:system/etc/AudioFilter.csv \
+    device/huawei/c8500/prebuilt/AudioFilterC8500.csv:system/etc/AudioFilterC8500.csv \
     device/huawei/c8500/prebuilt/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
     device/huawei/c8500/prebuilt/media_profiles.xml:system/etc/media_profiles.xml \
     device/huawei/c8500/prebuilt/akmd2:system/bin/akmd2 \
@@ -87,9 +91,9 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/base/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
-    frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/ \
+    frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     vendor/cyanogen/prebuilt/ldpi/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml 
 
 
 

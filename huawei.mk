@@ -24,6 +24,8 @@ $(call inherit-product, vendor/cyanogen/products/common_full_no_themes.mk)
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 #$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
+DEVICE_PACKAGE_OVERLAYS := device/huawei/c8500/overlay
+
 -include vendor/cyanogen/products/common_versions.mk
 
 PRODUCT_NAME :=huawei_c8500
