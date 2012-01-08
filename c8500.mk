@@ -6,11 +6,11 @@ PRODUCT_PACKAGES := \
     librs_jni \
     libRS \
     Gallery \
-    gps.c8500 \
     copybit.c8500 \
     gralloc.c8500 \
-    lights.c8500 \
-    sensors.c8500
+    sensors.c8500 \
+    lights.msm7k \
+    gps.msm7k
 
 
 PRODUCT_COPY_FILES := \
@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/copybit.msm7k.so:system/lib/hw/copybit.c8500.so \
     device/huawei/c8500/prebuilt/copybit.msm7k.so:obj/lib/copybit.c8500.so  \
     device/huawei/c8500/prebuilt/gralloc.msm7k.so:system/lib/hw/gralloc.c8500.so \
-    device/huawei/c8500/prebuilt/lights.msm7k.so:system/lib/hw/lights.c8500.so \
     device/huawei/c8500/prebuilt/libbcm_fm_power.so:system/lib/libbcm_fm_power.so \
     device/huawei/c8500/prebuilt/libbcmfm_if.so:system/lib/libbcmfm_if.so \
     device/huawei/c8500/prebuilt/libfm_hal.so:system/lib/libfm_hal.so \
