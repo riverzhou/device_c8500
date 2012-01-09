@@ -65,7 +65,8 @@ ro.com.android.dataroaming=false
 
 # GPS
 ro.ril.def.agps.mode=2
-ro.config.xtra_support=true
+ro.config.xtra_support=0
+#ro.config.xtra_support=true
 
 # FM
 #ro.config.fm_type=libbcmfm_if
