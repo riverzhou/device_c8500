@@ -9,5 +9,7 @@ rm -f system/etc/init.local.rc
 rm -f system/etc/init.d/04modules
 rm -f system/etc/init.d/20userinit
 rm -f system/etc/init.d/S97ramscript
-
+rm -f system/lib/modules/zram.ko
+rm -f system/lib/hw/*
+rm -f system/lib/egl/*
 
