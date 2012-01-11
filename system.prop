@@ -1,5 +1,7 @@
 #
 # system.prop for C8500
+ro.product.locale.language=zh
+ro.product.locale.region=CN
 #
 # Graphics
 view.fading_edge_length=8
@@ -13,12 +15,11 @@ persist.sys.use_dithering=0
 persist.sys.purgeable_assets=1
 persist.sys.use_16bpp_alpha=1
 windowsmgr.max_events_per_sec=260
-#debug.sf.hw=1
-#debug.performance.tuning=1
+debug.performance.tuning=1
 
 # Power
-#pm.sleep_mode=1
-#ro.ril.disable.power.collapse=0
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
 
 # WiFi
 wifi.interface=eth0
@@ -32,7 +33,7 @@ ro.com.android.dataroaming=false
 
 # GPS
 ro.ril.def.agps.mode=2
-ro.config.xtra_support=true
+ro.config.xtra_support=false
 
 # FM
 #ro.config.fm_type=libbcmfm_if
