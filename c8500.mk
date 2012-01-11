@@ -1,17 +1,14 @@
 
-DEVICE_PACKAGE_OVERLAYS := device/huawei/c8500/overlay
-
 
 PRODUCT_PACKAGES := \
     librs_jni \
     libRS \
     Gallery \
-    copybit.c8500 \
-    gralloc.c8500 \
     sensors.c8500 \
+    gralloc.c8500 \
+    copybit.msm7k \
     lights.msm7k \
     gps.msm7k
-
 
 PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/gps.conf:system/etc/gps.conf \
@@ -72,6 +69,8 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/libqmi.so:system/lib/libqmi.so \
     device/huawei/c8500/prebuilt/libqueue.so:system/lib/libqueue.so \
     device/huawei/c8500/prebuilt/libril-qc-1.so:system/lib/libril-qc-1.so \
+    device/huawei/c8500/prebuilt/libreference-ril.so:system/lib/libreference-ril.so \
+    device/huawei/c8500/prebuilt/libreference-cdma-sms.so:system/lib/libreference-cdma-sms.so \
     device/huawei/c8500/prebuilt/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     device/huawei/c8500/prebuilt/libwms.so:system/lib/libwms.so \
     device/huawei/c8500/prebuilt/libwmsts.so:system/lib/libwmsts.so                     
@@ -101,6 +100,5 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     vendor/cyanogen/prebuilt/ldpi/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml 
-
 
 

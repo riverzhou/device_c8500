@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS := device/huawei/c8500/overlay
+#DEVICE_PACKAGE_OVERLAYS := device/huawei/c8500/overlay
 
 $(call inherit-product-if-exists, device/huawei/c8500/c8500.mk)
 $(call inherit-product-if-exists, device/huawei/c8500/languages.mk)
@@ -24,7 +24,7 @@ $(call inherit-product, vendor/cyanogen/products/common_full_no_themes.mk)
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 #$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
-DEVICE_PACKAGE_OVERLAYS := device/huawei/c8500/overlay
+#DEVICE_PACKAGE_OVERLAYS := device/huawei/c8500/overlay
 
 -include vendor/cyanogen/products/common_versions.mk
 
@@ -33,6 +33,5 @@ PRODUCT_DEVICE :=c8500
 PRODUCT_MODEL :=c8500
 PRODUCT_BRAND :=huawei
 PRODUCT_MANUFACTURER :=huawei
-PRODUCT_LOCALES += ldpi mdpi
-
+PRODUCT_LOCALES += ldpi 
 
