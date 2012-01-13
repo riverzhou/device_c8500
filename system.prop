@@ -1,7 +1,5 @@
 #
 # system.prop for C8500
-ro.product.locale.language=zh
-ro.product.locale.region=CN
 #
 # Graphics
 view.fading_edge_length=8

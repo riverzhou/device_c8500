@@ -2,6 +2,7 @@
 DEVICE_PACKAGE_OVERLAYS := device/huawei/c8500/overlay
 
 PRODUCT_PACKAGES := \
+    LatinIME \
     librs_jni \
     libRS \
     Gallery \
@@ -19,6 +20,13 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/nvram.txt:system/etc/firmware/nvram.txt \
     device/huawei/c8500/prebuilt/bcm4319.ko:system/lib/modules/bcm4319.ko \
     device/huawei/c8500/prebuilt/sensors.default.so:system/lib/hw/sensors.c8500.so \
+    device/huawei/c8500/prebuilt/copybit.msm7k.so:system/lib/hw/copybit.c8500.so \
+    device/huawei/c8500/prebuilt/copybit.msm7k.so:obj/lib/copybit.c8500.so  \
+    device/huawei/c8500/prebuilt/gralloc.msm7k.so:system/lib/hw/gralloc.c8500.so \
+    device/huawei/c8500/prebuilt/libbcm_fm_power.so:system/lib/libbcm_fm_power.so \
+    device/huawei/c8500/prebuilt/libbcmfm_if.so:system/lib/libbcmfm_if.so \
+    device/huawei/c8500/prebuilt/libfm_hal.so:system/lib/libfm_hal.so \
+    device/huawei/c8500/prebuilt/libfm_volume.so:system/lib/libfm_volume.so \
     device/huawei/c8500/prebuilt/AudioFilter.csv:system/etc/AudioFilter.csv \
     device/huawei/c8500/prebuilt/AudioFilterC8500.csv:system/etc/AudioFilterC8500.csv \
     device/huawei/c8500/prebuilt/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
