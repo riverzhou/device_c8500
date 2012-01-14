@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES := \
     device/huawei/c8500/prebuilt/libmm-omxcore.so:system/lib/libmm-omxcore.so \
     device/huawei/c8500/prebuilt/libmmgsdilib.so:system/lib/libmmgsdilib.so \
     device/huawei/c8500/prebuilt/libmmipl.so:system/lib/libmmipl.so \
+    device/huawei/c8500/prebuilt/libmmipl.so:obj/lib/libmmipl.so \
     device/huawei/c8500/prebuilt/libmmjpeg.so:system/lib/libmmjpeg.so \
     device/huawei/c8500/prebuilt/libmmprocess.so:system/lib/libmmprocess.so \
     device/huawei/c8500/prebuilt/libnv.so:system/lib/libnv.so \
