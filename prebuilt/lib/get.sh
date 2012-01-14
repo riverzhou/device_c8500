@@ -10,6 +10,9 @@ S3=${S}/s3/${W}
 f=`ls`
 
 for i in $f ; do
+	if [ "${i}" = "get.sh" ] ; then
+		continue
+	fi
 	if [ -e ${S1}/${i} ] ; then
 		cp ${S1}/${i} .
 		echo ${S1}/${i}
@@ -25,6 +28,7 @@ for i in $f ; do
 		echo ${S3}/${i}
 		continue
 	fi
+	echo ${i}  ---  no found  ---
 done
 
 
