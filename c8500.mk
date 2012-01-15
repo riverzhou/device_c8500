@@ -7,7 +7,7 @@ PRODUCT_PACKAGES := \
     Gallery \
     sensors.default \
     gralloc.msm7k \
-    copybit.msm7k \
+    copybit.c8500 \
     lights.msm7k \
     gps.msm7k
 
