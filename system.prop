@@ -14,6 +14,7 @@ persist.sys.purgeable_assets=1
 persist.sys.use_16bpp_alpha=1
 windowsmgr.max_events_per_sec=260
 debug.performance.tuning=1
+video.accelerate.hw=1
 
 # Power
 pm.sleep_mode=1
@@ -31,7 +32,11 @@ ro.com.android.dataroaming=false
 
 # GPS
 ro.ril.def.agps.mode=2
-ro.config.xtra_support=false
+#ro.config.xtra_support=false
+
+# PROXIM
+ro.lge.proximity.delay=25
+mot.proximity.delay=25
 
 # FM
 #ro.config.fm_type=libbcmfm_if
@@ -41,6 +46,8 @@ dalvik.vm.execution-mode=int:fast
 dalvik.vm.heapsize=24m
 dalvik.vm.stack-trace-file=/data/anr/traces.txt
 #dalvik.vm.dexopt-data-only=1
+dalvik.vm.checkjni=0
+ro.kernel.android.checkjni=0
 
 # No Autofocus device
 ro.workaround.noautofocus=1
@@ -67,4 +74,7 @@ ro.config.cdma_subscription=0
 ro.cdma.voicemail.number=mine
 ril.subscription.types=RUIM
 ro.setupwizard.enable_bypass=1
+
+net.tcp.buffersize.cdma 4096,87380,110208,4096,16384,110208
+net.tcp.buffersize.evdo 4096,87380,110208,4096,16384,110208
 
